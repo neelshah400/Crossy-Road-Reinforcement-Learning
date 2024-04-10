@@ -1,3 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Crossy-Road-Reinforcement-Learning"
+version = "0.1.0"
+dependencies = ["notebook", "nbconvert"]
+requires-python = ">= 3.12"
+authors = [
+    { name = "Neel Shah", email = "neelshah@terpmail.umd.edu" },
+    { name = "Anish Bagri", email = "aabagri@terpmail.umd.edu" },
+    { name = "Nathan Sankar", email = "nsankar@terpmail.umd.edu" },
+    { name = "Akul Gokaram", email = "agokaram@terpmail.umd.edu" },
+    { name = "Aditya Sharda", email = "asharda@terpmail.umd.edu" },
+]
+maintainers = []
+description = "Crossy Road Reinforcement Learning"
+readme = "README.md"
+license = { text = "MIT License" }
+keywords = ["Crossy Road", "Reinforcement Learning"]
+classifiers = ["Programming Language :: Python :: 3"]
+
+[project.optional-dependencies]
+dev = ["validate-pyproject", "ruff", "pre-commit"]
+
 [tool.ruff]
 extend-include = ["*.ipynb"]
 
