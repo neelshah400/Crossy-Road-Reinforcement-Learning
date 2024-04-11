@@ -27,7 +27,7 @@
 3. Activate the virtual environment.
 
    ```shell
-   . .venv/bin/activate
+   source .venv/bin/activate
    ```
 
 4. Sync the virtual environment with the development dependencies.

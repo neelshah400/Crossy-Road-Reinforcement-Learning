@@ -5,7 +5,13 @@ build-backend = "hatchling.build"
 [project]
 name = "Crossy-Road-Reinforcement-Learning"
 version = "0.1.0"
-dependencies = ["notebook", "gymnasium[atari, accept-rom-license]", "pygame"]
+dependencies = [
+    "notebook",
+    "gymnasium[atari, accept-rom-license, other]",
+    "pygame",
+    "opencv-python",
+    "pillow",
+]
 requires-python = ">= 3.11"
 authors = [
     { name = "Neel Shah", email = "neelshah@terpmail.umd.edu" },
