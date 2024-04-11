@@ -1,4 +1,4 @@
-.PHONY: default clean create-venv activate-venv install-hooks run-hooks validate compile compile-dev sync sync-dev pdf
+.PHONY: default clean create-venv install-hooks run-hooks validate compile compile-dev sync sync-dev pdf
 
 default:
 	@echo "Please specify a target to run"
@@ -8,9 +8,6 @@ clean:
 
 create-venv:
 	uv venv
-
-activate-venv:
-	. .venv/bin/activate
 
 install-hooks:
 	pre-commit install
