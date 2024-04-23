@@ -35,3 +35,9 @@
    ```shell
    make sync-dev
    ```
+
+5. Install the pre-commit hooks.
+
+   ```shell
+   make install-hooks
+   ```
