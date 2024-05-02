@@ -11,6 +11,10 @@ dependencies = [
     "pygame",
     "opencv-python",
     "pillow",
+    "torch",
+    "torchvision",
+    "torcheval",
+    "tqdm",
 ]
 requires-python = ">= 3.11"
 authors = [

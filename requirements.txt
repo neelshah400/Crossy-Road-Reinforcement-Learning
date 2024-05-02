@@ -204,6 +204,7 @@ numpy==1.26.4
     #   moviepy
     #   opencv-python
     #   shimmy
+    #   torchvision
 opencv-python==4.9.0.80
     # via gymnasium
 overrides==7.7.0
@@ -226,6 +227,7 @@ pillow==10.3.0
     # via
     #   imageio
     #   matplotlib
+    #   torchvision
 platformdirs==4.2.0
     # via jupyter-core
 proglog==0.1.10
@@ -317,7 +319,11 @@ terminado==0.18.1
 tinycss2==1.2.1
     # via nbconvert
 torch==2.2.2
-    # via gymnasium
+    # via
+    #   gymnasium
+    #   torchvision
+torcheval==0.0.7
+torchvision==0.17.2
 tornado==6.4
     # via
     #   ipykernel
@@ -352,6 +358,7 @@ typing-extensions==4.11.0
     #   gymnasium
     #   ipython
     #   torch
+    #   torcheval
 uri-template==1.3.0
     # via jsonschema
 urllib3==2.2.1
