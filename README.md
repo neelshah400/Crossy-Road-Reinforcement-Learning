@@ -65,8 +65,13 @@
    ```shell
    conda activate py311
    ```
+4. Download the Atari ROMs.
 
-4. Install the pre-commit hooks.
+   ```shell
+   pip install gymnasium[accept-rom-license]
+   ```
+
+5. Install the pre-commit hooks.
 
    ```shell
    make install-hooks

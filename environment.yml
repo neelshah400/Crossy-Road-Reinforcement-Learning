@@ -7,7 +7,9 @@ dependencies:
   - python=3.11
   - pip
   - notebook
-  - gymnasium[atari, accept-rom-license, other]
+  - gymnasium-all # gymnasium[atari, accept-rom-license, other]
+  - pip:
+      - gymnasium[accept-rom-license]
   - pygame
   - opencv # opencv-python
   - pillow
@@ -17,6 +19,7 @@ dependencies:
   - pip:
       - torcheval
   - tqdm
+  - matplotlib
   - validate-pyproject
   - ruff
   - pre-commit

@@ -1,4 +1,4 @@
-.PHONY: default clean clean-full srun create-venv create-conda-env install-hooks run-hooks validate compile compile-dev sync sync-dev pdf
+.PHONY: default clean clean-full srun create-venv create-conda-env install-hooks run-hooks validate compile compile-dev sync sync-dev sync-conda pdf
 
 default:
 	@echo "Please specify a target to run"
@@ -38,6 +38,9 @@ sync:
 
 sync-dev:
 	uv pip sync requirements-dev.txt
+
+sync-conda:
+	conda env update --file environment.yml
 
 pdf:
 	jupyter nbconvert --to pdf "Crossy Road Reinforcement Learning.ipynb"
