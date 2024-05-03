@@ -161,3 +161,5 @@ cython_debug/
 
 # Extra
 .DS_Store
+*.pth
+runs/
