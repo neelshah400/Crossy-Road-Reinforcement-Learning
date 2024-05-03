@@ -1,0 +1,22 @@
+name: py311
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  - pip
+  - notebook
+  - gymnasium[atari, accept-rom-license, other]
+  - pygame
+  - opencv # opencv-python
+  - pillow
+  - numpy
+  - pytorch # torch
+  - torchvision
+  - pip:
+    - torcheval
+  - tqdm
+  - validate-pyproject
+  - ruff
+  - pre-commit
