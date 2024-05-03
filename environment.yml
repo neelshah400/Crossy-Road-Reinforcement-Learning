@@ -15,7 +15,7 @@ dependencies:
   - pytorch # torch
   - torchvision
   - pip:
-    - torcheval
+      - torcheval
   - tqdm
   - validate-pyproject
   - ruff
