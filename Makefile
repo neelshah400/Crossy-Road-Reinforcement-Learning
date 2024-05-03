@@ -1,10 +1,13 @@
-.PHONY: default clean create-venv install-hooks run-hooks validate compile compile-dev sync sync-dev pdf
+.PHONY: default clean clean-full create-venv install-hooks run-hooks validate compile compile-dev sync sync-dev pdf
 
 default:
 	@echo "Please specify a target to run"
 
 clean:
-	rm -rf *.pdf
+	rm -rf *.pdf policy_net.pth target_net.pth episode_durations.png
+
+clean-full:
+	rm -rf *.pdf *.pth *.png runs
 
 create-venv:
 	uv venv
