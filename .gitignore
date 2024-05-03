@@ -162,4 +162,5 @@ cython_debug/
 # Extra
 .DS_Store
 *.pth
+episode_durations.png
 runs/

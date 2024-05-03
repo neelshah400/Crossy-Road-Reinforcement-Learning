@@ -16,6 +16,7 @@ dependencies = [
     "torchvision",
     "torcheval",
     "tqdm",
+    "matplotlib",
 ]
 requires-python = ">= 3.11"
 authors = [
