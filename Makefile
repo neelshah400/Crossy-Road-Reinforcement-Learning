@@ -4,10 +4,10 @@ default:
 	@echo "Please specify a target to run"
 
 clean:
-	rm -rf *.pdf policy_net.pth target_net.pth episode_durations.png
+	rm -rf checkpoint.tar
 
 clean-full:
-	rm -rf *.pdf *.pth *.png runs
+	rm -rf *.pdf checkpoint.tar checkpoints/
 
 srun:
 	srun --partition=class --account=class --qos=high --gres=gpu:4 --pty bash
